@@ -1,0 +1,27 @@
+.aboutContent {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutItem {
+  flex: 1;
+  margin: 1em;
+  background: rgba(241, 244, 245, 0.317);
+  color: #585c6c;
+}
+.aboutItem p {
+  margin: 1em;
+}
+@media all and (max-width: 900px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+  .aboutItemSm {
+    display: flex;
+    justify-content: center;
+    background-color: #f7bbc0;
+  }
+  .aboutImage {
+    max-width: 500px;
+    margin: auto;
+  }
+}

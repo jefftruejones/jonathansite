@@ -1,19 +1,12 @@
-.container {
-  margin: auto;
-  max-width: 500px;
+.containerFull {
+  width: 100%;
+  background-color: #f5d6e5;
+  min-height: 100vh;
   font-family: sans-serif;
 }
-.heading {
-  color: rebeccapurple;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-.nav-link-item {
-  padding-right: 2rem;
-}
-.nav-link-text {
-  color: black;
+.content {
+  max-width: 1200px;
+  background-color: #f7bbc0;
+  margin: auto;
+  min-height: 100vh;
 }

@@ -1,34 +1,15 @@
 import * as React from "react";
-import { Link } from "gatsby";
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-} from "./layout.module.css";
+import { containerFull, content } from "./layout.module.css";
+import Navbar from "./navbar";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   return (
-    <main className={container}>
-      <title>{pageTitle}</title>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <h1 className={heading}>{pageTitle}</h1>
-      {children}
-    </main>
+    <>
+      <Navbar />
+      <main className={containerFull}>
+        <div className={content}>{children}</div>
+      </main>
+    </>
   );
 };
 
